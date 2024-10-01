@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4FACFE, #00F2Fe);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px black solid;
+
+}
+
+footer {
+    text-align: center;
+    border-top: 2px black solid;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+    padding: 2rem;
+    border-right: 2px black solid;
+}
+
+#container {
+    flex: 1;
+    display: flex;
+}
+
+.project-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 3%;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.task-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 3%;
+    top: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 10px;
+    border: 2px black solid;
+    padding: 10px;
+    background-color: #C4D7FF;
+}
+
+#task-form div {
+    padding-bottom: 10px;
+}
+
+.task-section-header {
+    padding: 10px;
+    border-bottom: 1px black solid;
+    height: 100px;
+    width: 100vw;
+}

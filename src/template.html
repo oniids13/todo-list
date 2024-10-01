@@ -6,6 +6,68 @@
     <title>My Todo-List</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <div id="container">
+        <div class="side-bar">
+            <button class="add-task-btn">New Task</button>
+            <button class="add-project-btn">New Project</button>
+        </div>
+        <div id="addProjectModal" class="project-modal">
+            <div class="modal-content">
+                <h3>Add New Project</h3>
+                <form id="project-form">
+                    <label for="project-name">Project Name:</label>
+                    <input type="text" name="project-name" id="project-name">
+                    <button type="submit" id="addProject">Add Project</button>
+                </form>
+                <button class="close-modal-btn">Close</button>
+            </div>
+        </div>
+        <div id="addTaskModal" class="task-modal">
+            <div class="modal-content">
+                <h3>Add New Task</h3>
+                <form id="task-form">
+                    <div>
+                        <label for="task-name">Task Name:</label>
+                        <input type="text" name="task-name" id="task-name">
+                    </div>
+                    <div>
+                        <label for="task-date">Due Date:</label>
+                        <input type="date" name="task-date" id="task-date">
+                    </div>
+                    <div>
+                        <label for="task-priority">Priority Level:</label>
+                        <select name="task-priority" id="task-priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="task-notes">Notes:</label>
+                        <textarea name="task-notes" id="task-notes" rows="4" cols="30"></textarea>
+                    </div>
+                    <div>
+                        <label for="project-select">Select Project:</label>
+                        <select name="project-select" id="project-select"></select>
+                    </div>
+                    <button type="submit" id="addTask">Add Task</button>
+                </form>
+                <button class="close-task-btn">Close</button>
+            </div>
+        </div>
+        <div class="task-section-header">
+            <h2>Select Project:</h2>
+            <select name="projects" id="project-selection"></select>
+        </div>
+        <div class="task-section">
+            
+        </div>
+    </div>
+    <footer>
+        &copy; <span class="footer"></span> Jose Dino Abaya
+    </footer>
 </body>
 </html>
