@@ -23,7 +23,7 @@ footer {
 .side-bar {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 20vw;
     gap: 10px;
     padding: 2rem;
     border-right: 2px black solid;
@@ -38,7 +38,7 @@ footer {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 3%;
+    left: 2%;
     top: 20%;
     width: 100%;
     height: 100%;
@@ -48,7 +48,7 @@ footer {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 3%;
+    left: 2%;
     top: 20%;
     width: 100%;
     height: 100%;
@@ -72,5 +72,76 @@ footer {
     padding: 10px;
     border-bottom: 1px black solid;
     height: 100px;
-    width: 100vw;
+    width: 78vw;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.task-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.taskList-low {
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: yellow;
+}
+
+.taskList-medium {
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.taskList-high {
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+}
+
+.taskList-done {
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: green;
+}
+
+.low {
+    background-color: yellow;
+}
+
+.med {
+    background-color: orange;
+}
+
+.high {
+    background-color: red;
+}
+
+.done {
+    background-color: green;
+}
+
+.toggleBtn {
+    width: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
 }

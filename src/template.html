@@ -13,6 +13,11 @@
         <div class="side-bar">
             <button class="add-task-btn">New Task</button>
             <button class="add-project-btn">New Project</button>
+            <h3>Legend:</h3>
+            <span class="low">Low Priority</span>
+            <span class="med">Medium Priority</span>
+            <span class="high">High Priority</span>
+            <span class="done">Task Completed</span>
         </div>
         <div id="addProjectModal" class="project-modal">
             <div class="modal-content">
@@ -58,12 +63,13 @@
                 <button class="close-task-btn">Close</button>
             </div>
         </div>
-        <div class="task-section-header">
-            <h2>Select Project:</h2>
-            <select name="projects" id="project-selection"></select>
-        </div>
-        <div class="task-section">
-            
+        <div class="task-container">
+            <div class="task-section-header">
+                <h2>Select Project:</h2>
+                <select name="projects" id="project-selection"></select>
+            </div>
+            <div class="task-section">
+            </div>
         </div>
     </div>
     <footer>

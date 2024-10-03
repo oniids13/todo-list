@@ -16,4 +16,8 @@ export class Project {
         }
     }
 
+    getTasks() {
+        return this.tasks;
+    }
+
 }
